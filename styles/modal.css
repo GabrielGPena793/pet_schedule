@@ -1,0 +1,33 @@
+#modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  backdrop-filter: blur(5px);
+
+  & #container_form {
+    padding: 2.5rem;
+    max-width: 29.8125rem;
+    background-color: var(--background-tertiary);
+    border-radius: 12px;
+    border: 1px solid var(--border-primary);
+
+    & header {
+      & h2 {
+        font: 700 1.5rem/2rem var(--ff-base);
+        color: var(--content-primary);
+      }
+
+      & p {
+        font: var(--paragraph-medium);
+        color: var(--content-secondary);
+      }
+    }
+  }
+}
