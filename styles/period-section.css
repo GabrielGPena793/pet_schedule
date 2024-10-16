@@ -32,7 +32,7 @@ section.container_period {
 
   & .container_content {
     display: grid;
-    grid-template-columns: 0.8fr 2.8fr 3fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     padding: 0.75rem;
 
@@ -44,6 +44,7 @@ section.container_period {
     & .content_hour {
       font: var(--label-small);
       color: var(--content-primary);
+      margin-right: 1rem;
     }
 
     & .content_name {
@@ -70,5 +71,20 @@ section.container_period {
 
   & + section {
     margin-top: 0.75rem;
+  }
+
+  @media (width < 768px) {
+    & .container_content {
+      grid-template-columns: auto;
+      grid-template-rows: 1.5fr 1fr 1fr;
+
+      & .content_hour {
+        margin-right: 0.5rem;
+      }
+
+      & button.remove_schendule {
+        justify-self: flex-end;
+      }
+    }
   }
 }
