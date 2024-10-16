@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-:hoot {
+:root {
   --content-primary: #ffffff;
   --content-secondary: #98959d;
   --content-tertiary: #666666;
@@ -36,4 +36,39 @@
   --label-medium: 700 0.875rem/24px var(--ff-base);
   --label-small: 700 0.75rem/16px var(--ff-base);
   --link: 400 0.75rem/16px var(--ff-base);
+}
+
+body {
+  background-color: var(--background-primary);
+  position: relative;
+  min-height: 100vh;
+
+  & #logo {
+    width: fit-content;
+    padding: 0.875rem 1.25rem;
+    background-color: var(--background-secondary);
+    border-bottom-right-radius: 12px;
+  }
+
+  & #new_schendule {
+    all: unset;
+    position: absolute;
+    bottom: 1.875rem;
+    right: 2.0625rem;
+
+    font: var(--label-large);
+    color: var(--background-primary);
+    background-color: var(--background-brand);
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px #9282fa87;
+
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: var(--background-highlights);
+    }
+  }
 }
