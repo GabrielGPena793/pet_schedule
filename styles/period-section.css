@@ -1,0 +1,74 @@
+section.container_period {
+  background-color: var(--background-tertiary);
+  border-radius: 10px;
+
+  & .container_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1.25rem;
+
+    border-bottom: 1px solid var(--border-divisor);
+
+    & .container_title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      & strong {
+        font: var(--label-large);
+        color: var(--content-primary);
+      }
+    }
+
+    & span {
+      font: var(--label-large);
+      color: var(--content-secondary);
+    }
+  }
+
+  & .container {
+    padding: 1.25rem;
+  }
+
+  & .container_content {
+    display: grid;
+    grid-template-columns: 0.8fr 2.8fr 3fr 2fr;
+    align-items: center;
+    padding: 0.75rem;
+
+    & span {
+      font: var(--paragraph-small);
+      color: var(--content-secondary);
+    }
+
+    & .content_hour {
+      font: var(--label-small);
+      color: var(--content-primary);
+    }
+
+    & .content_name {
+      font: var(--label-small);
+      color: var(--content-primary);
+    }
+
+    & button.remove_schendule {
+      all: unset;
+      font: var(--paragraph-small);
+      color: var(--content-tertiary);
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+        color: var(--content-primary);
+      }
+    }
+
+    & + .container_content {
+      border-top: 1px solid var(--border-divisor);
+    }
+  }
+
+  & + section {
+    margin-top: 0.75rem;
+  }
+}

@@ -1,6 +1,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 
   & h1 {
     font: 700 1.5rem/2rem var(--ff-base);
