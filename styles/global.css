@@ -81,6 +81,26 @@ body {
       background-color: var(--background-highlights);
     }
   }
+
+  @media (width < 768px) {
+    padding-bottom: 0;
+
+    & #container_new_schendule {
+      margin-top: 2.875rem;
+      padding-block: 1rem;
+      background-color: var(--background-tertiary);
+      margin-left: -2rem;
+      width: calc(100% + 4rem);
+
+      & #new_schendule {
+        position: relative;
+        bottom: unset;
+        right: unset;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 input[type="date"]::-webkit-inner-spin-button {
