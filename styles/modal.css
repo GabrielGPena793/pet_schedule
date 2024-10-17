@@ -19,6 +19,8 @@
     border: 1px solid var(--border-primary);
 
     & header {
+      margin-bottom: 1.75rem;
+
       & h2 {
         font: 700 1.5rem/2rem var(--ff-base);
         color: var(--content-primary);

@@ -1,0 +1,10 @@
+textarea {
+  padding: 0.75rem;
+  font: 400 1rem/150% var(--ff-base);
+  color: var(--content-primary);
+  resize: none;
+
+  background-color: var(--background-tertiary);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+}

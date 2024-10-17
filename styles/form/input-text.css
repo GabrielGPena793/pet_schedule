@@ -1,0 +1,14 @@
+input[type="text"] {
+  all: unset;
+  padding: 0.75rem;
+  border: 1px solid var(--border-primary);
+  background-color: var(--background-tertiary);
+  border-radius: 8px;
+  color: var(--content-primary);
+  font: 400 1rem/150% var(--ff-base);
+
+  &::placeholder {
+    font: 400 1rem/150% var(--ff-base);
+    color: var(--content-secondary);
+  }
+}

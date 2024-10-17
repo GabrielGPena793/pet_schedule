@@ -13,46 +13,6 @@ header#schedule_header {
     color: var(--content-secondary);
   }
 
-  & #container_date {
-    position: relative;
-    border: 1px solid var(--border-primary);
-    border-radius: 8px;
-    display: flex;
-
-    & input[type="date"] {
-      all: unset;
-      padding: 0.75rem 1.5rem;
-      margin-left: 0.75rem;
-
-      font: 400 1rem/150% var(--ff-base);
-      color: var(--content-secondary);
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        left: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: url("../assets/Calendar-Minimalistic--Streamline-Solar.svg")
-          no-repeat center center;
-        z-index: -1;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: url("../assets/Icon.svg") no-repeat center center;
-      }
-    }
-  }
-
   @media (width < 768px) {
     flex-direction: column;
     gap: 0.75rem;

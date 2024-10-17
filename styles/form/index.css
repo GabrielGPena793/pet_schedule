@@ -1,0 +1,37 @@
+@import url("./input-date.css");
+@import url("./button.css");
+@import url("./input-text.css");
+@import url("./textarea.css");
+@import url("./select.css");
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & input:focus,
+  & textarea:focus,
+  & select:focus {
+    outline: 1px solid var(--content-primary);
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & label {
+    font: var(--label-medium);
+    color: var(--content-primary);
+    margin-bottom: 4px;
+  }
+
+  & #container_date_hour {
+    flex-direction: row;
+    gap: 1rem;
+
+    & div {
+      flex: 1;
+    }
+  }
+}

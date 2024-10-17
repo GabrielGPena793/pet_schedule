@@ -164,7 +164,73 @@
           <p>Preencha os dados do cliente para realizar o agendamento:</p>
         </header>
 
-        <form></form>
+        <form>
+          <div>
+            <label for="client_name">Nome do tutor</label>
+            <input
+              type="text"
+              name="client_name"
+              id="client_name"
+              placeholder="Helena Souza"
+            />
+          </div>
+
+          <div>
+            <label for="pet_name">Nome do Pet</label>
+            <input
+              type="text"
+              name="pet_name"
+              id="pet_name"
+              placeholder="Cheddar"
+            />
+          </div>
+
+          <div>
+            <label for="phone">Telefone</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="(00) 00000-0000"
+            />
+          </div>
+
+          <div>
+            <label for="description_service">Descrição do serviço</label>
+            <textarea
+              name="description_service"
+              id="description_service"
+              placeholder="Banho e tosa"
+            ></textarea>
+          </div>
+
+          <div id="container_date_hour">
+            <div>
+              <label for="date">Data</label>
+              <div id="container_date">
+                <input
+                  title="input de data"
+                  type="date"
+                  name="date"
+                  id="date"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="hour">Hora</label>
+
+              <div id="container_select">
+                <select name="hour" id="hour">
+                  <option value="12:00">12:00</option>
+                  <option value="12:00">13:00</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button id="button_submit" type="submit">Agendar</button>
+        </form>
       </div>
     </div>
   </body>
