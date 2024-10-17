@@ -34,4 +34,10 @@ form {
       flex: 1;
     }
   }
+
+  @media (width < 768px) {
+    & #container_date_hour {
+      flex-direction: column;
+    }
+  }
 }
