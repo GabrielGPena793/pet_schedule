@@ -26,6 +26,18 @@ form {
     margin-bottom: 4px;
   }
 
+  & label.label_icon {
+    display: flex;
+    gap: 0.5rem;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   & #container_date_hour {
     flex-direction: row;
     gap: 1rem;

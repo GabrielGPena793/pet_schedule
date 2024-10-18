@@ -12,3 +12,24 @@ input[type="text"] {
     color: var(--content-secondary);
   }
 }
+
+label[for="client_name"] {
+  &::before {
+    background: url("../../assets/User--Streamline-Solar.svg") no-repeat center
+      center;
+  }
+}
+
+label[for="pet_name"] {
+  &::before {
+    background: url("../../assets/Pet-Paw--Streamline-Core.svg") no-repeat
+      center center;
+  }
+}
+
+label[for="phone"] {
+  &::before {
+    background: url("../../assets/Phone--Streamline-Solar.svg") no-repeat center
+      center;
+  }
+}
