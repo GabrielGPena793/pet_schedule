@@ -52,11 +52,16 @@ section.container_period {
       color: var(--content-primary);
     }
 
+    & .type_consultation {
+      justify-self: center;
+    }
+
     & button.remove_schendule {
       all: unset;
       font: var(--paragraph-small);
       color: var(--content-tertiary);
       cursor: pointer;
+      justify-self: flex-end;
 
       &:hover {
         text-decoration: underline;
