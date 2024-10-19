@@ -36,6 +36,20 @@ section.container_period {
     align-items: center;
     padding: 0.75rem;
 
+    & > div {
+      display: flex;
+      align-items: center;
+
+      & img {
+        margin-right: 0.5rem;
+
+        &:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+      }
+    }
+
     & span {
       font: var(--paragraph-small);
       color: var(--content-secondary);

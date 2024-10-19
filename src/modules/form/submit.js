@@ -2,6 +2,8 @@ import dayjs from "dayjs";
 import { scheduleNew } from "../../services/schedule-new";
 import { scheduleDays } from "../schedules/load";
 import { closeModal } from "../modal";
+import { scheduleGetById } from "../../services/shedule-gey-by-id";
+import { scheduleEdit } from "../../services/schendule-edit";
 
 const form = document.querySelector("form");
 const clientName = document.querySelector("#client_name");
@@ -47,14 +49,25 @@ form.onsubmit = async (event) => {
 
     const id = new Date().getTime();
 
-    await scheduleNew({
-      id,
-      clientName: clientNameValue,
-      petName: petNameValue,
-      typeConsultation: descriptionServiceValue,
-      phone: phoneValue,
-      when,
-    });
+    if (form.id) {
+      await scheduleEdit({
+        id: form.id,
+        clientName: clientNameValue,
+        petName: petNameValue,
+        typeConsultation: descriptionServiceValue,
+        phone: phoneValue,
+        when,
+      });
+    } else {
+      await scheduleNew({
+        id,
+        clientName: clientNameValue,
+        petName: petNameValue,
+        typeConsultation: descriptionServiceValue,
+        phone: phoneValue,
+        when,
+      });
+    }
 
     scheduleDays(dateValue);
     closeModal();

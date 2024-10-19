@@ -8,6 +8,6 @@ import "./styles/index.css";
 import "./modules/form/submit";
 import "./modules/page-load";
 import "./modules/schedules/date-change";
-import "./modules/schedules/cancel";
+import "./modules/schedules/events";
 import "./modules/form/input-date-change";
 import "./modules/modal";

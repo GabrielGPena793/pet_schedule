@@ -31,6 +31,11 @@ export function scheduleShow({ dailySchedules }) {
       const buttonCancel = document.createElement("button");
       buttonCancel.classList.add("remove_schendule");
 
+      const img = document.createElement("img");
+      img.src = "./src/assets/edit.svg";
+      img.alt = "Editar";
+      img.id = "edit";
+
       time.textContent = dayjs(schedule.when).format("HH:mm");
       name.textContent = schedule.clientName;
       petName.textContent = ` / ${schedule.petName}`;
@@ -38,7 +43,7 @@ export function scheduleShow({ dailySchedules }) {
       buttonCancel.textContent = "Remover agendamento";
 
       name.append(petName);
-      subDiv.append(time, name);
+      subDiv.append(img, time, name);
       div.append(subDiv, typeConsultation, buttonCancel);
 
       const hour = dayjs(schedule.when).hour();

@@ -27,7 +27,12 @@
         </div>
 
         <div id="container_date">
-          <input title="input de data" type="date" name="date" id="date" />
+          <input
+            title="input de data"
+            type="date"
+            name="date"
+            id="date-filter"
+          />
         </div>
       </header>
 
@@ -44,21 +49,7 @@
           <span>09h-12h</span>
         </div>
 
-        <div class="container">
-          <div class="container_content">
-            <div>
-              <strong class="content_hour">09:00</strong>
-
-              <strong class="content_name"
-                >Thor <span>/ Fernanda Costa</span>
-              </strong>
-            </div>
-
-            <span class="type_consultation">Vacinação</span>
-
-            <button class="remove_schendule">Remover agendamento</button>
-          </div>
-        </div>
+        <div class="container"></div>
       </section>
 
       <section class="container_period" id="afternoon">
@@ -75,49 +66,7 @@
           <span>13h-18h</span>
         </div>
 
-        <div class="container">
-          <div class="container_content">
-            <div>
-              <strong class="content_hour">09:00</strong>
-
-              <strong class="content_name"
-                >Thor <span>/ Fernanda Costa</span>
-              </strong>
-            </div>
-
-            <span class="type_consultation">Vacinação</span>
-
-            <button class="remove_schendule">Remover agendamento</button>
-          </div>
-
-          <div class="container_content">
-            <div>
-              <strong class="content_hour">09:00</strong>
-
-              <strong class="content_name"
-                >Thor <span>/ Fernanda Costa</span>
-              </strong>
-            </div>
-
-            <span class="type_consultation">Vacinação</span>
-
-            <button class="remove_schendule">Remover agendamento</button>
-          </div>
-
-          <div class="container_content">
-            <div>
-              <strong class="content_hour">09:00</strong>
-
-              <strong class="content_name"
-                >Thor <span>/ Fernanda Costa</span>
-              </strong>
-            </div>
-
-            <span class="type_consultation">Vacinação</span>
-
-            <button class="remove_schendule">Remover agendamento</button>
-          </div>
-        </div>
+        <div class="container"></div>
       </section>
 
       <section class="container_period" id="night">
@@ -133,21 +82,7 @@
           <span>19h-21h</span>
         </div>
 
-        <div class="container">
-          <div class="container_content">
-            <div>
-              <strong class="content_hour">09:00</strong>
-
-              <strong class="content_name"
-                >Thor <span>/ Fernanda Costa</span>
-              </strong>
-            </div>
-
-            <span class="type_consultation">Vacinação</span>
-
-            <button class="remove_schendule">Remover agendamento</button>
-          </div>
-        </div>
+        <div class="container"></div>
       </section>
     </main>
 
@@ -164,7 +99,7 @@
 
         <form>
           <div>
-            <label for="client_name">Nome do tutor</label>
+            <label for="client_name" class="label_icon">Nome do tutor</label>
             <input
               type="text"
               name="client_name"
@@ -174,7 +109,7 @@
           </div>
 
           <div>
-            <label for="pet_name">Nome do Pet</label>
+            <label for="pet_name" class="label_icon">Nome do Pet</label>
             <input
               type="text"
               name="pet_name"
@@ -184,7 +119,7 @@
           </div>
 
           <div>
-            <label for="phone">Telefone</label>
+            <label for="phone" class="label_icon">Telefone</label>
             <input
               type="text"
               name="phone"
@@ -211,6 +146,7 @@
                   type="date"
                   name="date"
                   id="date"
+                  required
                 />
               </div>
             </div>
@@ -219,10 +155,7 @@
               <label for="hour">Hora</label>
 
               <div id="container_select">
-                <select name="hour" id="hour">
-                  <option value="12:00">12:00</option>
-                  <option value="12:00">13:00</option>
-                </select>
+                <select name="hour" id="hour" required></select>
               </div>
             </div>
           </div>
